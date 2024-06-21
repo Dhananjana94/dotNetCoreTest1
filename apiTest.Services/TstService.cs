@@ -1,8 +1,9 @@
 ﻿using apitest.Models;
+using apiTest.Services;
 
 namespace apitest.Service
 {
-    public class TstService
+    public class TstService : ItstRepository
     {
         public List<TstMdl> AllTstModels()
         {
