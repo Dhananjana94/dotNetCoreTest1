@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "apiTest.Services/1.0.0": {
+        "dependencies": {
+          "apiTest.Models": "1.0.0"
+        },
+        "runtime": {
+          "apiTest.Services.dll": {}
+        }
+      },
+      "apiTest.Models/1.0.0": {
+        "runtime": {
+          "apiTest.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "apiTest.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "apiTest.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,4 +1,4 @@
-﻿using apitest.Models;
+﻿
 using apitest.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
