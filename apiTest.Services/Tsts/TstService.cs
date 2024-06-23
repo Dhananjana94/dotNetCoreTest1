@@ -1,7 +1,6 @@
 ﻿using apitest.Models;
-using apiTest.Services;
 
-namespace apitest.Service
+namespace apiTest.Services.Tsts
 {
     public class TstService : ItstRepository
     {

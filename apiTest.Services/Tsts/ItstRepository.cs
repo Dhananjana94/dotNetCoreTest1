@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace apiTest.Services
+namespace apiTest.Services.Tsts
 {
     public interface ItstRepository
     {

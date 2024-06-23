@@ -22,6 +22,40 @@ namespace apiTest.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("apiTest.Models.Author", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Authors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Wasantha perera"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Wasthi anushka"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Sumanapala herath"
+                        });
+                });
+
             modelBuilder.Entity("apitest.Models.TstMdl", b =>
                 {
                     b.Property<int>("Id")
@@ -29,6 +63,9 @@ namespace apiTest.DataAccess.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -49,18 +86,52 @@ namespace apiTest.DataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AuthorId");
+
                     b.ToTable("TstMdlTble");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 23, 12, 57, 42, 764, DateTimeKind.Local).AddTicks(2242),
+                            AuthorId = 1,
+                            CreatedDate = new DateTime(2024, 6, 23, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8605),
                             Description = "testing model 1",
                             Status = 0,
-                            Title = "Test model 1",
-                            UpdatedDate = new DateTime(2024, 6, 28, 12, 57, 42, 764, DateTimeKind.Local).AddTicks(2257)
+                            Title = "Test model 1 from sql",
+                            UpdatedDate = new DateTime(2024, 6, 28, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8615)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AuthorId = 1,
+                            CreatedDate = new DateTime(2024, 6, 23, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8625),
+                            Description = "testing model 2",
+                            Status = 0,
+                            Title = "Test model 2",
+                            UpdatedDate = new DateTime(2024, 6, 28, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8625)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AuthorId = 2,
+                            CreatedDate = new DateTime(2024, 6, 23, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8627),
+                            Description = "testing model 3",
+                            Status = 0,
+                            Title = "Test model 3",
+                            UpdatedDate = new DateTime(2024, 6, 28, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8628)
                         });
+                });
+
+            modelBuilder.Entity("apitest.Models.TstMdl", b =>
+                {
+                    b.HasOne("apiTest.Models.Author", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
                 });
 #pragma warning restore 612, 618
         }

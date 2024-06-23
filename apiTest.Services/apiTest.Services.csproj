@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\apiTest.DataAccess\apiTest.DataAccess.csproj" />
     <ProjectReference Include="..\apiTest.Models\apiTest.Models.csproj" />
   </ItemGroup>
 

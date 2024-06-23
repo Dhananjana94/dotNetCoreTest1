@@ -1,6 +1,5 @@
 ﻿
-using apitest.Service;
-using apiTest.Services;
+using apiTest.Services.Tsts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

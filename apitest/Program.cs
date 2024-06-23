@@ -1,12 +1,14 @@
-using apitest.Service;
-using apiTest.Services;
+
+using apiTest.Services.AuthorDta;
+using apiTest.Services.Tsts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<ItstRepository,TstService>(); // dependancy inject
+builder.Services.AddScoped<ItstRepository,TstServiceSql>(); // dependancy inject
+builder.Services.AddScoped<IauthorRepository,AuthorServiceSql>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
