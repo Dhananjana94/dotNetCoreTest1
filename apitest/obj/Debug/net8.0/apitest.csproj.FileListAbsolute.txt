@@ -9,6 +9,10 @@ C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Microsof
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Models.dll
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Services.dll
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Services.pdb
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Models.pdb
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.AssemblyReference.cache
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.AssemblyInfoInputs.cache
@@ -31,7 +35,3 @@ C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\refint\a
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.pdb
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.genruntimeconfig.cache
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\ref\apitest.dll
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Models.dll
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Services.dll
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Services.pdb
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Models.pdb
