@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "apiTest.DataAccess": {
+      "commandName": "Project"
+    }
+  }
+}
