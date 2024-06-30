@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace apitest.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/tests")]
     [ApiController]
     public class ModelDataController : ControllerBase
     {
@@ -22,7 +22,7 @@ namespace apitest.Controllers
         public IActionResult Modelget(int id)
         {
             //TstService obj = new TstService();
-            var tstModel = _tstRepository.AllTstModels().Where(t => t.Id == id);
+            var tstModel = _tstRepository.AllTstModels().Where(t => t.Id == id); 
             return Ok(tstModel); 
         }
         

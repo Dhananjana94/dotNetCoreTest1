@@ -25,6 +25,10 @@ namespace apitest.Controllers
         public IActionResult GetauthorById(int id)
         {
             var author = _author.GetAuthorById(id);
+            if(author == null)
+            {
+                return NotFound();
+            }
             return Ok(author);
         }
     }
