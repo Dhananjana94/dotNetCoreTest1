@@ -43,5 +43,10 @@ namespace apiTest.Services.Tsts
 
             return tsts;
         }
+
+        public TstMdl GetTstById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -15,5 +15,10 @@ namespace apiTest.Services.Tsts
         {
             return _context.TstMdlTble.ToList();
         }
+
+        public TstMdl GetTstById(int id)
+        {
+            return _context.TstMdlTble.Find(id);
+        }
     }
 }

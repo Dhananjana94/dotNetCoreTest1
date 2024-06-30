@@ -9,7 +9,7 @@ namespace apitest.Controllers
     [ApiController]
     public class ModelDataController : ControllerBase
     {
-       // private TstService _stService; // this is private attribute it only access inside this class
+        // private TstService _stService; // this is private attribute it only access inside this class
 
         private ItstRepository _tstRepository;
 
@@ -18,12 +18,26 @@ namespace apitest.Controllers
             _tstRepository = repo;
         }
 
-        [HttpGet("{id}")]
-        public IActionResult Modelget(int id)
+        //[HttpGet("{id}")]
+        //public IActionResult Modelget(int id)
+        //{
+        //    //TstService obj = new TstService();
+        //    var tstModel = _tstRepository.AllTstModels().Where(t => t.Id == id); 
+        //    return Ok(tstModel); 
+        //}
+
+        [HttpGet]
+        public IActionResult GetAllTest()
         {
-            //TstService obj = new TstService();
-            var tstModel = _tstRepository.AllTstModels().Where(t => t.Id == id); 
-            return Ok(tstModel); 
+            var tstMdls = _tstRepository.AllTstModels();
+            return Ok(tstMdls);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetTestById(int id) { 
+            
+            var tstMdl = _tstRepository.GetTstById(id);
+            return Ok(tstMdl);
         }
         
     }
