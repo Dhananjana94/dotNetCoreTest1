@@ -1,6 +1,9 @@
 ﻿using apiTest.Services.AuthorDta;
+using apiTest.Services.ViewModels;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.ObjectModel;
 
 namespace apitest.Controllers
 {
@@ -9,16 +12,31 @@ namespace apitest.Controllers
     public class AuthorsController : ControllerBase
     {
         private IauthorRepository _author;
-        public AuthorsController(IauthorRepository author)
+        private IMapper _mapper;
+        public AuthorsController(IauthorRepository author,IMapper mapper)
         {
             _author = author;
+            _mapper = mapper;
         }
         [HttpGet]
-        public IActionResult AuthorGet()
+        public ActionResult<ICollection<AuthorDto>> AuthorGet()
         {
 
             var authors = _author.GetAllAuthors();
-            return Ok(authors);
+           // var authorsDto = new List<AuthorDto>();
+
+            //foreach (var author in authors)
+            //{
+            //    //Normal way to map data
+            //    authorsDto.Add(new AuthorDto
+            //    {
+            //        Id = author.Id,
+            //        Name = author.Name,
+            //        Address = $"{author.Address},{author.Street},{author.City}"
+            //    });
+            //}
+            var mappedAuthors = _mapper.Map<ICollection<AuthorDto>>(authors);
+            return Ok(mappedAuthors);
         }
 
         [HttpGet("{id}")]
@@ -29,7 +47,9 @@ namespace apitest.Controllers
             {
                 return NotFound();
             }
-            return Ok(author);
+
+            var mappedAuthor = _mapper.Map<AuthorDto>(author);
+            return Ok(mappedAuthor);
         }
     }
 }

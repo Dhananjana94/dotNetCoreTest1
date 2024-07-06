@@ -1,3 +1,12 @@
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.AssemblyReference.cache
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.Properties.Resources.resources
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.GenerateResource.cache
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.AssemblyInfoInputs.cache
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.AssemblyInfo.cs
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.CoreCompileInputs.cache
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.sourcelink.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\appsettings.Development.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\appsettings.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apitest.exe
@@ -5,6 +14,7 @@ C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apitest.
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apitest.runtimeconfig.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apitest.dll
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apitest.pdb
+C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\AutoMapper.dll
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Azure.Core.dll
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Azure.Identity.dll
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -53,16 +63,7 @@ C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Services.pdb
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.DataAccess.pdb
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\bin\Debug\net8.0\apiTest.Models.pdb
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.AssemblyReference.cache
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.Properties.Resources.resources
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.GenerateResource.cache
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.AssemblyInfoInputs.cache
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.AssemblyInfo.cs
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.csproj.CoreCompileInputs.cache
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.MvcApplicationPartsAssemblyInfo.cache
-C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\apitest.sourcelink.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\staticwebassets.build.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\staticwebassets.development.json
 C:\Projects\ASPNET_Core\WebApi\dotNetCoreTest1\apitest\obj\Debug\net8.0\staticwebassets\msbuild.apitest.Microsoft.AspNetCore.StaticWebAssets.props

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,9 +63,9 @@ namespace apiTest.DataAccess
 
             modelBuilder.Entity<Author>().HasData(new Author[]
             {
-                new Author { Id = 1,Name = "Wasantha perera"},
-                new Author { Id = 2,Name="Wasthi anushka"},
-                new Author { Id = 3,Name="Sumanapala herath"}
+                new Author { Id = 1,Name = "Wasantha perera",Address = "dibulagala",Street="60 para",City="Galpola"},
+                new Author { Id = 2,Name="Wasthi anushka",Address = "Raththota",Street="30 para",City="thota"},
+                new Author { Id = 3,Name="Sumanapala herath",Address = "Galgamuwa",Street="20 para",City="muwa"}
             });
         }
     }
