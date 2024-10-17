@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Snq8I0fi9JfWP2teUV3YD0sF0597AaCeEZ9KZBsi+h0WE0pJm4Cb5QQgVgPIy8hGCje3zEJcnEeK3d5AHCOaVg==",
+  "dgSpecHash": "xuZNpohkwBC27QO2t2ywuskf8UT/3qqlmH9OkTHeKu6yxcx27oOhR3vkaNHhcWvCkjI5gtxqlnpWAl7+KlyZsg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\ASPNET_Core\\WebApi\\dotNetCoreTest1\\apiTest.Services\\apiTest.Services.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NDW\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\NDW\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\NDW\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\NDW\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

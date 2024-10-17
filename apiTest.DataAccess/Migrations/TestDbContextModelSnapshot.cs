@@ -30,9 +30,25 @@ namespace apiTest.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -42,17 +58,26 @@ namespace apiTest.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Wasantha perera"
+                            Address = "dibulagala",
+                            City = "Galpola",
+                            Name = "Wasantha perera",
+                            Street = "60 para"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Wasthi anushka"
+                            Address = "Raththota",
+                            City = "thota",
+                            Name = "Wasthi anushka",
+                            Street = "30 para"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Sumanapala herath"
+                            Address = "Galgamuwa",
+                            City = "muwa",
+                            Name = "Sumanapala herath",
+                            Street = "20 para"
                         });
                 });
 
@@ -72,14 +97,16 @@ namespace apiTest.DataAccess.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
@@ -95,43 +122,48 @@ namespace apiTest.DataAccess.Migrations
                         {
                             Id = 1,
                             AuthorId = 1,
-                            CreatedDate = new DateTime(2024, 6, 23, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8605),
+                            CreatedDate = new DateTime(2024, 6, 30, 17, 46, 53, 448, DateTimeKind.Local).AddTicks(5369),
                             Description = "testing model 1",
                             Status = 0,
                             Title = "Test model 1 from sql",
-                            UpdatedDate = new DateTime(2024, 6, 28, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8615)
+                            UpdatedDate = new DateTime(2024, 7, 5, 17, 46, 53, 448, DateTimeKind.Local).AddTicks(5382)
                         },
                         new
                         {
                             Id = 2,
                             AuthorId = 1,
-                            CreatedDate = new DateTime(2024, 6, 23, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8625),
+                            CreatedDate = new DateTime(2024, 6, 30, 17, 46, 53, 448, DateTimeKind.Local).AddTicks(5391),
                             Description = "testing model 2",
                             Status = 0,
                             Title = "Test model 2",
-                            UpdatedDate = new DateTime(2024, 6, 28, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8625)
+                            UpdatedDate = new DateTime(2024, 7, 5, 17, 46, 53, 448, DateTimeKind.Local).AddTicks(5391)
                         },
                         new
                         {
                             Id = 3,
                             AuthorId = 2,
-                            CreatedDate = new DateTime(2024, 6, 23, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8627),
+                            CreatedDate = new DateTime(2024, 6, 30, 17, 46, 53, 448, DateTimeKind.Local).AddTicks(5394),
                             Description = "testing model 3",
                             Status = 0,
                             Title = "Test model 3",
-                            UpdatedDate = new DateTime(2024, 6, 28, 17, 17, 2, 603, DateTimeKind.Local).AddTicks(8628)
+                            UpdatedDate = new DateTime(2024, 7, 5, 17, 46, 53, 448, DateTimeKind.Local).AddTicks(5394)
                         });
                 });
 
             modelBuilder.Entity("apitest.Models.TstMdl", b =>
                 {
                     b.HasOne("apiTest.Models.Author", "Author")
-                        .WithMany()
+                        .WithMany("tstMdls")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("apiTest.Models.Author", b =>
+                {
+                    b.Navigation("tstMdls");
                 });
 #pragma warning restore 612, 618
         }

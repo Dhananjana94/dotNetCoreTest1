@@ -4,7 +4,7 @@ namespace apiTest.Services.Tsts
 {
     public class TstService : ItstRepository
     {
-        public List<TstMdl> AllTstModels()
+        public List<TstMdl> AllTstModels(int authorID)
         {
             var tsts = new List<TstMdl>();
 
@@ -42,6 +42,11 @@ namespace apiTest.Services.Tsts
             tsts.Add(tst3);
 
             return tsts;
+        }
+
+        public TstMdl GetTstById(int authorID, int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

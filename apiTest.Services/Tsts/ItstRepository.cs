@@ -9,6 +9,8 @@ namespace apiTest.Services.Tsts
 {
     public interface ItstRepository
     {
-        public List<TstMdl> AllTstModels();
+        public List<TstMdl> AllTstModels(int authorID);
+
+        public TstMdl GetTstById(int authorID,int id);
     }
 }
