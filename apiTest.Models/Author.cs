@@ -11,7 +11,7 @@ namespace apiTest.Models
     public class Author
     {
         public int Id { get; set; }
-        [Required]
+        [Required] //data annotation
         [MaxLength(255)]
         public string Name { get; set; }
 

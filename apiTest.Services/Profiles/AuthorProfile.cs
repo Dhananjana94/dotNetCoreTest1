@@ -14,6 +14,7 @@ namespace apiTest.Services.Profiles
         public AuthorProfile()
         {
             CreateMap<Author, AuthorDto>()
+                //projection part(Map data from source to destination)
                 .ForMember(dest => dest.Address,
                 opt => opt.MapFrom(src => $"{src.Address},{src.Street},{src.City}"));
         }
